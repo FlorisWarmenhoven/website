@@ -1,7 +1,9 @@
+const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: './src/index.jsx',
+  entry: './index.jsx',
+  context: path.resolve(__dirname, '..', 'src'),
   module: {
     rules: [
       {
@@ -18,11 +20,20 @@ module.exports = {
           },
         },
       },
+      {
+        test: /\.(png|jpe?g|gif)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {},
+          },
+        ],
+      },
     ],
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/index.html',
+      template: './index.html',
     }),
   ],
   resolve: {

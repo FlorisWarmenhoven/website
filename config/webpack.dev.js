@@ -1,4 +1,5 @@
 const merge = require('webpack-merge');
+const path = require('path');
 const common = require('./webpack.common');
 
 module.exports = merge(common, {
@@ -9,6 +10,7 @@ module.exports = merge(common, {
     hot: true,
     noInfo: true,
     historyApiFallback: true,
+    contentBase: path.resolve(__dirname, '..', 'src'),
   },
   module: {
     rules: [
