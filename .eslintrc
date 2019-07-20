@@ -1,5 +1,6 @@
 {
   "extends": ["airbnb"],
+  "plugins": ["only-warn"],
   "rules": {
     "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
     "import/prefer-default-export": false
