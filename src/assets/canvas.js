@@ -69,7 +69,6 @@ const floatySpace = () => {
   space.play();
 };
 
-floatySpace();
 setTimeout(() => floatySpace(), 10);
 
 window.onresize = () => {
