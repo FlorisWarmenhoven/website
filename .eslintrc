@@ -3,7 +3,9 @@
   "plugins": ["only-warn"],
   "rules": {
     "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
-    "import/prefer-default-export": false
+    "import/prefer-default-export": false,
+    "react/no-unescaped-entities": 0,
+    "react/jsx-one-expression-per-line": 0
   },
   "env": {
     "browser": true
