@@ -1,0 +1,70 @@
+@import '../../../variables.scss';
+
+.hexagon-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.hexagon-wrapper {
+  text-align: center;
+  position: relative;
+  margin-bottom: 10px;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+}
+
+.hexagon {
+  height: 100%;
+  width: 57.735%;
+  display: inline-block;
+  background-color: #04c2c9;
+  text-align: center;
+  animation: 1s ease infinite pulse;
+}
+
+.hexagon:before {
+  position: absolute;
+  top: 0;
+  right: 21.1325%;
+  background-color: inherit;
+  height: inherit;
+  width: inherit;
+  content: '';
+  transform: rotate(60deg);
+}
+
+.hexagon:after {
+  position: absolute;
+  top: 0;
+  right: 21.1325%;
+  background-color: inherit;
+  height: inherit;
+  width: inherit;
+  content: '';
+  transform: rotate(-60deg);
+}
+
+.hexagon-icon {
+  position: absolute;
+  z-index: 1;
+  font-size: 50px;
+  left: 25px;
+  top: 25px;
+  right: 0;
+  display: inline-block;
+  color: white;
+}
+
+.hexagon-header {
+  @extend %fontBold;
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.hexagon-description {
+  text-align: center;
+}

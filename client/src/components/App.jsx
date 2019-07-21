@@ -2,10 +2,12 @@ import { hot } from 'react-hot-loader/root';
 import React from 'react';
 import '../assets/canvas';
 import { Landing } from './Landing/Landing';
+import { About } from './About/About';
 
 const App = () => (
   <>
     <Landing />
+    <About />
   </>
 );
 

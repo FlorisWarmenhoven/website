@@ -1,4 +1,14 @@
 $orange: #f4ad24;
-$font: 'Raleway', sans-serif;
-$font-bold: 'Raleway-semibold', sans-serif;
 $blue: #04c2c9;
+$lightGray: #616161;
+$font: Raleway, sans-serif;
+
+%fontSemiBold {
+  font-family: $font;
+  font-weight: 600;
+}
+
+%fontBold {
+  font-family: $font;
+  font-weight: 700;
+}
