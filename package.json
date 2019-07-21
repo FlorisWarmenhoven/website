@@ -6,7 +6,7 @@
   "author": "Floris Warmenhoven <floriswarmenhoven@gmail.com>",
   "scripts": {
     "start": "cd server && yarn start",
-    "postinstall": "cd server && yarn && cd ../client && yarn",
+    "postinstall": "cd server && yarn && cd ../client && yarn install --prod=false",
     "heroku-postbuild": "cd client && yarn build"
   },
   "license": "MIT"
