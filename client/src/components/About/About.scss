@@ -1,4 +1,44 @@
+@import '../../variables.scss';
+
 .about {
   height: 500px;
   background-color: white;
+  padding: 100px 0 200px 0;
+}
+
+.about-header {
+  font-size: 40px;
+  @extend %fontBold;
+  text-align: center;
+  color: #444649;
+  opacity: 0;
+}
+
+.fade-in-from-right {
+  animation-name: fadeInFromRight;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInFromRight {
+  0% {
+    transform: translateX(-300px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+.hr {
+  width: 70px;
+  height: 4px;
+  background-color: #444649;
+  margin: auto;
+  margin-top: 25px;
+  opacity: 0;
+  animation-delay: 0.5s;
+  margin-bottom: 100px;
 }
