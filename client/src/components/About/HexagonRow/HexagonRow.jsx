@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaRegHeart, FaFutbol, FaBeer } from 'react-icons/fa';
+import { FaRegHeart, FaFutbol, FaClipboardList } from 'react-icons/fa';
 
 import { IoMdSchool } from 'react-icons/io';
 import { HexagonItem } from '../HexagonItem/HexagonItem';
@@ -25,10 +25,10 @@ export const HexagonRow = () => (
       headerText="Teamplayer"
     />
     <HexagonItem
-      icon={FaBeer}
+      icon={FaClipboardList}
       animationDelay="0.6s"
-      description="Going out with colleagues and friends excites me"
-      headerText="Sociable"
+      description="Failing to plan is planning to fail"
+      headerText="Organized"
     />
   </div>
 );
