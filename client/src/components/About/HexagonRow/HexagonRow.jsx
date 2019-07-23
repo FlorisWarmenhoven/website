@@ -9,26 +9,26 @@ export const HexagonRow = () => (
   <div className="hexagon-row">
     <HexagonItem
       icon={FaRegHeart}
-      description="Coding makes my heart beat faster, and I lose track of time"
       headerText="Passionate"
+      description="Coding makes my heart beat faster, and I lose track of time"
     />
     <HexagonItem
       icon={IoMdSchool}
-      animationDelay="0.2s"
-      description="I love learning new technologies"
       headerText="Fast Learner"
+      description="I love learning new technologies"
+      animationDelay="0.2s"
     />
     <HexagonItem
       icon={FaFutbol}
-      animationDelay="0.4s"
-      description="Colaborating on projects is amazing"
       headerText="Teamplayer"
+      description="Colaborating on projects is amazing"
+      animationDelay="0.4s"
     />
     <HexagonItem
       icon={FaClipboardList}
-      animationDelay="0.6s"
-      description="Failing to plan is planning to fail"
       headerText="Organized"
+      description="Failing to plan is planning to fail"
+      animationDelay="0.6s"
     />
   </div>
 );
