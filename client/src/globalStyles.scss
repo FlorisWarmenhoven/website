@@ -8,3 +8,39 @@ body {
   background-color: #252934;
   color: $lightGray;
 }
+
+.fade-in-from-right {
+  animation-name: fadeInFromRight;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInFromRight {
+  0% {
+    transform: translateX(300px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+.fade-in-from-left {
+  animation-name: fadeInFromLeft;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInFromLeft {
+  0% {
+    transform: translateX(-300px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
