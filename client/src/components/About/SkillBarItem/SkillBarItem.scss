@@ -1,0 +1,56 @@
+@import '../../../variables.scss';
+
+.skill-bar-item {
+  position: relative;
+  width: 100%;
+  height: 28px;
+  background-color: #eee;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.skill-bar-fill {
+  position: absolute;
+  background-color: $blueDarker;
+  display: flex;
+  height: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  transition-property: width;
+  transition-duration: 1.1s;
+  transition-timing-function: ease-in-out;
+}
+
+.skill-bar-list:not(.animated) .skill-bar-fill {
+  width: 120px !important;
+}
+
+.skill-text {
+  position: absolute;
+  @extend %fontBold;
+  color: white;
+  background-color: $blue;
+  height: 100%;
+  width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.experience {
+  position: absolute;
+  left: 130px;
+  color: #fff;
+  margin-right: 10px;
+  transition-property: opacity;
+  transition-duration: 1.1s;
+  transition-timing-function: ease-in-out;
+  opacity: 1;
+}
+
+.skill-bar-list:not(.animated) .experience {
+  opacity: 0 !important;
+}

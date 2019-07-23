@@ -1,0 +1,9 @@
+@import '../../../variables.scss';
+
+.skill-bar-list {
+  width: 500px;
+  opacity: 0;
+  & > * {
+    margin-bottom: 10px;
+  }
+}

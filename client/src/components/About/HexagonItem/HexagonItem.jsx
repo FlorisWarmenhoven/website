@@ -16,7 +16,7 @@ export const HexagonItem = (props) => {
     rootMargin: '0px 0px -200px 0px',
   });
   const [hexagonTextRef, hexagonTextEntry] = useIntersect({
-    rootMargin: '0px 0px -250px 0px',
+    rootMargin: '0px 0px -280px 0px',
   });
 
   useEffect(() => {

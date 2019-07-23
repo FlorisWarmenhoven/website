@@ -10,7 +10,7 @@ export const HexagonRow = () => (
     <HexagonItem
       icon={FaRegHeart}
       headerText="Passionate"
-      description="Coding makes my heart beat faster, and I lose track of time"
+      description="Coding makes my heart beat faster"
     />
     <HexagonItem
       icon={IoMdSchool}
